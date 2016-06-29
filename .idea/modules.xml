@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ATMachine.iml" filepath="$PROJECT_DIR$/ATMachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Upwork.iml" filepath="$PROJECT_DIR$/Upwork.iml" />
     </modules>
   </component>
 </project>
