@@ -43,6 +43,9 @@ input {
 .bigDiv {
   height: 150px; }
 
+.optional {
+  padding-top: 10%; }
+
 #thank-you {
   text-align: center; }
 

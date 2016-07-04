@@ -7,11 +7,12 @@
   },
   "dependencies": {
     "babel-core": "latest",
-    "babel-loader": "latest",
     "babel-eslint": "latest",
+    "babel-loader": "latest",
     "babel-preset-es2015": "latest",
-    "jscs": "latest",
     "eslint": "latest",
+    "jscs": "latest",
+    "nedb": "^1.8.0",
     "webpack": "latest"
   },
   "devDependencies": {
