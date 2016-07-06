@@ -11,11 +11,11 @@ ASSIGNMENT: Create a Website whose parameters are specified by an Upwork client.
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vantage Leasing</title>
-        <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
-        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link rel="stylesheet" href="public/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="public/css/style.css" type="text/css">
     </head>
     <body>
-        <img src="../images/vantageLeasing.png" alt="Vantage Leasing" id="logo">
+        <img src="public/images/vantageLeasing.png" alt="Vantage Leasing" id="logo">
         <div id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingOne">
@@ -180,7 +180,7 @@ ASSIGNMENT: Create a Website whose parameters are specified by an Upwork client.
                                 </div>
                                 <div class="form-group">
                                     <label for="timeAtAddress">Time at Address*</label>
-                                    <input class="form-control" type="time" name="timeAtAddress" id="timeAtAddress" required>
+                                    <input class="form-control" type="text" name="timeAtAddress" placeholder="Years" id="timeAtAddress" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="addressStatus">Address Status*</label>
@@ -218,7 +218,7 @@ ASSIGNMENT: Create a Website whose parameters are specified by an Upwork client.
                                 </div>
                                 <div class="form-group">
                                     <label for="timeAtPreviousAddress">Time at Previous Address*</label>
-                                    <input class="form-control" type="time" name="timeAtPreviousAddress" id="timeAtPreviousAddress" required>
+                                    <input class="form-control" type="text" name="timeAtPreviousAddress" placeholder="Years" id="timeAtPreviousAddress" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="previousAddressStatus">Previous Address Status*</label>
@@ -311,7 +311,7 @@ ASSIGNMENT: Create a Website whose parameters are specified by an Upwork client.
                                 </div>
                                 <div class="form-group">
                                     <label for="timeAtAddressOfSecondDirector">Time at Address Of Second Director*</label>
-                                    <input class="form-control" type="time" name="timeAtAddressOfSecondDirector" id="timeAtAddressOfSecondDirector" required>
+                                    <input class="form-control" type="text" name="timeAtAddressOfSecondDirector" placeholder="Years" id="timeAtAddressOfSecondDirector" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="addressStatusOfSecondDirector">Address Status Of Second Director*</label>
@@ -349,7 +349,7 @@ ASSIGNMENT: Create a Website whose parameters are specified by an Upwork client.
                                 </div>
                                 <div class="form-group">
                                     <label for="timeAtPreviousAddressOfSecondDirector">Time at Previous Address Of Second Director*</label>
-                                    <input class="form-control" type="time" name="timeAtPreviousAddressOfSecondDirector" id="timeAtPreviousAddressOfSecondDirector" required>
+                                    <input class="form-control" type="text" name="timeAtPreviousAddressOfSecondDirector" placeholder="Years" id="timeAtPreviousAddressOfSecondDirector" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="previousAddressStatus">Previous Address Status Of Second Director*</label>
@@ -442,7 +442,7 @@ ASSIGNMENT: Create a Website whose parameters are specified by an Upwork client.
                                 </div>
                                 <div class="form-group">
                                     <label for="timeAtAddressOfThirdDirector">Time at Address Of Third Director*</label>
-                                    <input class="form-control" type="time" name="timeAtAddressOfThirdDirector" id="timeAtAddressOfThirdDirector" required>
+                                    <input class="form-control" type="text" name="timeAtAddressOfThirdDirector" placeholder="Years" id="timeAtAddressOfThirdDirector" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="addressStatusOfThirdDirector">Address Status Of Third Director*</label>
@@ -480,7 +480,7 @@ ASSIGNMENT: Create a Website whose parameters are specified by an Upwork client.
                                 </div>
                                 <div class="form-group">
                                     <label for="timeAtPreviousAddressOfThirdDirector">Time at Previous Address Of Third Director*</label>
-                                    <input class="form-control" type="time" name="timeAtPreviousAddressOfThirdDirector" id="timeAtPreviousAddressOfThirdDirector" required>
+                                    <input class="form-control" type="text" name="timeAtPreviousAddressOfThirdDirector" placeholder="Years" id="timeAtPreviousAddressOfThirdDirector" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="previousAddressStatusOfThirdDirector">Previous Address Status Of Third Director*</label>
@@ -539,7 +539,7 @@ ASSIGNMENT: Create a Website whose parameters are specified by an Upwork client.
                                 </div>
                                 <div class="form-group">
                                     <label for="time">Time at Address*</label>
-                                    <input class="form-control" type="time" name="time" id="time" required>
+                                   <input class="form-control" type="text" name="time" id="time" placeholder="Years" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="address-status">Address Status*</label>
@@ -606,375 +606,6 @@ ASSIGNMENT: Create a Website whose parameters are specified by an Upwork client.
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-default next" data-toggle="collapse" data-target="#collapseSix" data-parent="#accordion" aria-expanded="true" aria-controls="collapseSix">
-                            Next
-                        </button>
-                    </form>
-                </div>
-            </div>
-    <!--
-    <div class="container">
-        <p>Welcome User! Please fill out our secure online application form to proceed with your order.</p>
-        <div id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h4 class="panel-title">
-                            About Your Company
-                        </h4>
-                    </a>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in container" role="tabpanel" aria-labelledby="headingOne">
-                    <form id="personal-details" action="">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="title">Title</label>
-                                    <select class="form-control" name="title" id="title" autofocus required>
-                                        <option value=""></option>
-                                        <option value="mr">Mr</option>
-                                        <option value="mrs">Mrs</option>
-                                        <option value="ms">Ms</option>
-                                        <option value="miss">Miss</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="first-name">First Name</label>
-                                    <input class="form-control" type="text" name="first-name" id="first-name" maxlength="100" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="last-name">Last Name</label>
-                                    <input class="form-control" type="text" name="last-name" id="last-name" maxlength="100" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email-address">Email</label>
-                                    <input class="form-control" type="text" name="email-address" id="email-address" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="mobile-number">Mobile Number</label>
-                                    <input class="form-control" type="text" placeholder="+44" name="mobile-number" id="mobile-number" pattern="^(\+44|0)( |-)?[1-9][- 0-9]{7,11}$" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="date-of-birth">Date of Birth</label>
-                                    <input class="form-control" name="date-of-birth" id="date-of-birth" type="date" max="1999-01-01" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="marital-status">Marital Status</label>
-                                    <select class="form-control" name="marital-status" id="marital-status" required>
-                                        <option value=""></option>
-                                        <option value="civil-partnership">Civil Partnership</option>
-                                        <option value="divorced">Divorced</option>
-                                        <option value="in-relationship">In Relationship</option>
-                                        <option value="married">Married</option>
-                                        <option value="separated">Separated</option>
-                                        <option value="single">Single</option>
-                                        <option value="widowed">Widowed</option>
-                                    </select></div>
-                                <div class="form-group">
-                                    <label for="dependents">Dependents</label>
-                                    <input class="form-control" type="number" name="dependents" id="dependents" min="0" pattern="\d*" max="10" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="credit-cards-held">Credit Cards Held</label>
-                                    <input class="form-control" type="number" pattern="\d*" name="credit-cards-held" min="0" max="20" id="credit-cards-held" required>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default next" data-toggle="collapse" data-target="#collapseTwo" data-parent="#accordion" aria-expanded="true" aria-controls="collapseTwo">
-                            Next
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true"
-                       aria-controls="collapseTwo">
-                        <h4 class="panel-title">
-                            Address Details
-                        </h4>
-                    </a>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse container" role="tabpanel" aria-labelledby="headingTwo">
-                    <form action="" id="address-details">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="property">Property</label>
-                                    <input class="form-control" type="text" name="property" id="property" maxlength="100" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="street">Street</label>
-                                    <input class="form-control" type="text" name="street" id="street" maxlength="100" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="locality">Locality</label>
-                                    <input class="form-control" type="text" name="locality" id="locality" maxlength="100" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="town">Town</label>
-                                    <input class="form-control" type="text" name="town" id="town" maxlength="100" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="postcode">Postcode</label>
-                                    <input class="form-control" type="text" name="postcode" id="postcode" maxlength="8" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="time">Time at Address</label>
-                                    <input class="form-control" type="time" name="time" id="time" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="address-status">Address Status</label>
-                                    <select class="form-control" name="address-status" id="address-status">
-                                        <option value=""></option>
-                                        <option value="co-Owner">Co-Owner</option>
-                                        <option value="council-tenant">Council Tenant</option>
-                                        <option value="housing-authority-tenant">Housing Authority Tenant</option>
-                                        <option value="living-with-parents">Living With Parents</option>
-                                        <option value="mortgaged-owner">Mortgaged Owner</option>
-                                        <option value="outright-owner">Outright Owner</option>
-                                        <option value="renting">Renting</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default next" data-toggle="collapse" data-target="#collapseThree" data-parent="#accordion" aria-expanded="true" aria-controls="collapseThree">
-                            Next
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                        <h4 class="panel-title">
-                            Employment Details
-                        </h4>
-                    </a>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse container" role="tabpanel" aria-labelledby="headingThree">
-                    <form action="" id="employment-details">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="employer-name">
-                                        Employer Name
-                                    </label>
-                                    <input type="text" name="employer-name" id="employer-name" class="form-control" maxlength="100" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="position">
-                                        Position
-                                    </label>
-                                    <input type="text" name="position" id="position" class="form-control" maxlength="100" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="address-1">
-                                        Address Line 1
-                                    </label>
-                                    <input type="text" name="address-1" id="address-1" class="form-control" maxlength="50" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="address-2">
-                                        Address Line 2
-                                    </label>
-                                    <input type="text" name="address-2" id="address-2" class="form-control" maxlength="50" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="employment-town">
-                                        Town
-                                    </label>
-                                    <input type="text" name="employment-town" id="employment-town" class="form-control" maxlength="50" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="employment-postcode">
-                                        Postcode
-                                    </label>
-                                    <input type="text" name="employment-postcode" id="employment-postcode" class="form-control" maxlength="8" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="telephone-number">
-                                        Telephone Number
-                                    </label>
-                                    <input type="text" name="telephone-number" id="telephone-number" placeholder="+44" class="form-control" pattern="^(\+44|0)( |-)?[1-9][- 0-9]{7,11}$" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="time-at-employer">
-                                        Time at Employer
-                                    </label>
-                                    <input type="date" name="time-at-employer" id="time-at-employer" class="form-control" required>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default next" data-toggle="collapse" data-target="#collapseFour" data-parent="#accordion" aria-expanded="true" aria-controls="collapseFour">
-                            Next
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingFour">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                        <h4 class="panel-title">
-                            Income and Expenditure
-                        </h4>
-                    </a>
-                </div>
-                <div id="collapseFour" class="panel-collapse collapse container" role="tabpanel" aria-labelledby="headingFour">
-                    <form action="" id="income-details">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="total-monthly-income">Total Monthly Income</label>
-                                    <input type="text" name="total-monthly-income" id="total-monthly-income" class="form-control" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="mortgage/rent">Mortgage/Rent</label>
-                                    <input type="text" name="mortgage/rent" id="mortgage/rent" class="form-control" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="endowment/repayment-vehicle">
-                                        Endowment/Repayment Vehicle
-                                    </label>
-                                    <input type="text" name="endowment/repayment-vehicle" id="endowment/repayment-vehicle" class="form-control" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="council-tax">Council Tax</label>
-                                    <input type="text" name="council-tax" id="council-tax" class="form-control" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="credit-card-payments">
-                                        Credit Card Payments
-                                    </label>
-                                    <input type="text" name="credit-card-payments" id="credit-card-payments" class="form-control" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="secured-personal-loans">
-                                        Secured Personal Loans
-                                    </label>
-                                    <input type="text" name="secured-personal-loans" id="secured-personal-loans" class="form-control" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="unsecured-personal-loans">
-                                        Unsecured Personal Loans
-                                    </label>
-                                    <input type="text" name="unsecured-personal-loans" id="unsecured-personal-loans" class="form-control" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="utilities">
-                                        Utilities
-                                    </label>
-                                    <input type="text" name="utilities" id="utilities" class="form-control" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="form-group">
-                                    <label for="insurances">Insurances</label>
-                                    <input class="form-control" type="text" name="insurances" id="insurances" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="child-care/private-education">Child Care/Private Education</label>
-                                    <input class="form-control" type="text" name="child-care/private-education" id="child-care/private-education" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="child-support">Child Support</label>
-                                    <input class="form-control" type="text" name="child-support" id="child-support" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="pension-contribution">Pension Contribution</label>
-                                    <input class="form-control" type="text" name="pension-contribution" id="pension-contribution" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="food-and-drink">Food and Drink</label>
-                                    <input class="form-control" type="text" name="food-and-drink" id="food-and-drink" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="telephone-tv-internet">Telephone, TV & Internet</label>
-                                    <input class="form-control" type="text" name="telephone-tv-internet" id="telephone-tv-internet" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="travel">Travel</label>
-                                    <input class="form-control" type="text" name="travel" id="travel" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="other">Other</label>
-                                    <input class="form-control" type="text" name="other" id="other" pattern="(\d+)\.(\d{2})" required>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default next" data-toggle="collapse" data-target="#collapseFive" data-parent="#accordion" aria-expanded="true" aria-controls="collapseFive">
-                            Next
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingFive">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                        <h4 class="panel-title">
-                            Bank Details
-                        </h4>
-                    </a>
-                </div>
-                <div id="collapseFive" class="panel-collapse collapse container" role="tabpanel" aria-labelledby="headingFour">
-                    <form action="" id="bank-details">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <!-- <div class="form-group">
-                                         <label for="sort-code">Sort Code</label>
-                                         <input type="text" name="sort-code" id="sort-code" class="form-control" required>
-                                     </div>
-                                     <div class="form-group">
-                                         <label for="account-number">Account Number</label>
-                                         <input type="text" name="account-number" id="account-number" class="form-control" required>
-                                     </div>
-                                     <div class="form-group">
-                                         <label for="lookup">Lookup</label>
-                                         <input type="text" name="lookup" id="lookup" class="form-control" required>
-                                     </div>
-                                <div class="form-group">
-                                    <label for="bank-address-1">Bank Address Line 1</label>
-                                    <input type="text" name="bank-address-1" id="bank-address-1" class="form-control" maxlength="50" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="bank-address-2">Bank Address Line 2</label>
-                                    <input type="text" name="bank-address-2" id="bank-address-2" class="form-control" maxlength="50" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="form-group">
-                                    <label for="bank-town">Bank Town</label>
-                                    <input type="text" name="bank-town" id="bank-town" class="form-control" maxlength="50" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="bank-postcode">Bank Postcode</label>
-                                    <input type="text" name="bank-postcode" id="bank-postcode" class="form-control" maxlength="8" required>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-default next" data-toggle="collapse" data-target="#collapseSix" data-parent="#accordion" aria-expanded="true" aria-controls="collapseSix">
-                            Next
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingSix">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                        <h4 class="panel-title">
-                            Submit
-                        </h4>
-                    </a>
-                </div>
-                <div id="collapseSix" class="panel-collapse collapse container" role="tabpanel" aria-labelledby="headingFour">
-                    <form action="">
                         <div id="please-accept"></div>
                         <div class="checkbox">
                             <label>
@@ -989,11 +620,9 @@ ASSIGNMENT: Create a Website whose parameters are specified by an Upwork client.
                 </div>
             </div>
         </div>
-    </div>
-    -->
         <!-- SCRIPTS -->
-        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-        <script src="../javascripts/bootstrap.js"></script>
-        <script src= "../javascripts/bundle.js"></script>
+        <script src= "http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src= "public/javascripts/bootstrap.js"></script>
+        <script src= "public/javascripts/bundle.js"></script>
     </body>
 </html>
