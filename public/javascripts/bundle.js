@@ -67,8 +67,39 @@
 	        value: function getReady() {
 	            var _this = this;
 
+	            window.history.pushState('page1', 'Title', '/');
 	            document.getElementById('aboutTheSecondDirector').style.display = 'none';
 	            document.getElementById('aboutTheThirdDirector').style.display = 'none';
+	            document.getElementById('previousProperty').style.display = 'none';
+	            document.getElementById('previousStreet').style.display = 'none';
+	            document.getElementById('previousPropertyLabel').style.display = 'none';
+	            document.getElementById('previousStreetLabel').style.display = 'none';
+	            document.getElementById('previousPropertyOfSecondDirector').style.display = 'none';
+	            document.getElementById('previousStreetOfSecondDirector').style.display = 'none';
+	            document.getElementById('previousPropertyLabelOfSecondDirector').style.display = 'none';
+	            document.getElementById('previousStreetLabelOfSecondDirector').style.display = 'none';
+	            document.getElementById('previousPropertyOfThirdDirector').style.display = 'none';
+	            document.getElementById('previousStreetOfThirdDirector').style.display = 'none';
+	            document.getElementById('previousPropertyLabelOfThirdDirector').style.display = 'none';
+	            document.getElementById('previousStreetLabelOfThirdDirector').style.display = 'none';
+	            document.getElementById('thankYou').style.display = 'none';
+
+	            var dtToday = new Date();
+	            var month = dtToday.getMonth() + 1;
+	            var day = dtToday.getDate();
+	            var year = dtToday.getFullYear();
+	            var birthYear = dtToday.getFullYear() - 18;
+	            if (month < 10) {
+	                month = '0' + month.toString();
+	            }
+	            if (day < 10) {
+	                day = '0' + day.toString();
+	            }
+	            document.getElementById('dateEstablished').value = '≤ ' + year + '-' + month + '-' + day;
+	            document.getElementById('dateOfBirth').value = '≤ ' + birthYear + '-' + month + '-' + day;
+	            document.getElementById('dateOfBirthOfSecondDirector').value = '≤ ' + birthYear + '-' + month + '-' + day;
+	            document.getElementById('dateOfBirthOfThirdDirector').value = '≤ ' + birthYear + '-' + month + '-' + day;
+
 	            var inputs = document.getElementsByClassName('form-control');
 
 	            var _loop = function _loop(i) {
@@ -113,7 +144,9 @@
 	                if (!document.getElementById('accept').checked) {
 	                    document.getElementById('please-accept').innerHTML = 'Please accept the terms & conditions';
 	                } else {
-	                    _this.getThankYouPage();
+	                    document.getElementById('thankYou').style.display = 'block';
+	                    document.getElementById('accordion').style.display = 'none';
+	                    window.history.pushState('page2', 'Thank You', '/thank-you');
 	                }
 	            });
 	        }
@@ -132,6 +165,48 @@
 	                    document.getElementById('aboutTheThirdDirector').style.display = 'block';
 	                }
 	            }, false);
+	            document.getElementById('timeAtAddress').addEventListener('keyup', function () {
+	                if (document.getElementById('timeAtAddress').value < 5 && document.getElementById('timeAtAddress').value != '') {
+	                    document.getElementById('previousProperty').style.display = 'block';
+	                    document.getElementById('previousStreet').style.display = 'block';
+	                    document.getElementById('previousPropertyLabel').style.display = 'block';
+	                    document.getElementById('previousStreetLabel').style.display = 'block';
+	                }
+	                if (document.getElementById('timeAtAddress').value > 5 && document.getElementById('timeAtAddress').value != '') {
+	                    document.getElementById('previousProperty').style.display = 'none';
+	                    document.getElementById('previousStreet').style.display = 'none';
+	                    document.getElementById('previousPropertyLabel').style.display = 'none';
+	                    document.getElementById('previousStreetLabel').style.display = 'none';
+	                }
+	            }, false);
+	            document.getElementById('timeAtAddressOfSecondDirector').addEventListener('keyup', function () {
+	                if (document.getElementById('timeAtAddressOfSecondDirector').value < 5 && document.getElementById('timeAtAddressOfSecondDirector').value != '') {
+	                    document.getElementById('previousPropertyOfSecondDirector').style.display = 'block';
+	                    document.getElementById('previousStreetOfSecondDirector').style.display = 'block';
+	                    document.getElementById('previousPropertyLabelOfSecondDirector').style.display = 'block';
+	                    document.getElementById('previousStreetLabelOfSecondDirector').style.display = 'block';
+	                }
+	                if (document.getElementById('timeAtAddressOfSecondDirector').value > 5 && document.getElementById('timeAtAddressOfSecondDirector').value != '') {
+	                    document.getElementById('previousPropertyOfSecondDirector').style.display = 'none';
+	                    document.getElementById('previousStreetOfSecondDirector').style.display = 'none';
+	                    document.getElementById('previousPropertyLabelOfSecondDirector').style.display = 'none';
+	                    document.getElementById('previousStreetLabelOfSecondDirector').style.display = 'none';
+	                }
+	            }, false);
+	            document.getElementById('timeAtAddressOfThirdDirector').addEventListener('keyup', function () {
+	                if (document.getElementById('timeAtAddressOfThirdDirector').value < 5 && document.getElementById('timeAtAddressOfThirdDirector').value != '') {
+	                    document.getElementById('previousPropertyOfThirdDirector').style.display = 'block';
+	                    document.getElementById('previousStreetOfThirdDirector').style.display = 'block';
+	                    document.getElementById('previousPropertyLabelOfThirdDirector').style.display = 'block';
+	                    document.getElementById('previousStreetLabelOfThirdDirector').style.display = 'block';
+	                }
+	                if (document.getElementById('timeAtAddressOfThirdDirector').value > 5 && document.getElementById('timeAtAddressOfThirdDirector').value != '') {
+	                    document.getElementById('previousPropertyOfThirdDirector').style.display = 'none';
+	                    document.getElementById('previousStreetOfThirdDirector').style.display = 'none';
+	                    document.getElementById('previousPropertyLabelOfThirdDirector').style.display = 'none';
+	                    document.getElementById('previousStreetLabelOfThirdDirector').style.display = 'none';
+	                }
+	            }, false);
 	        }
 	    }, {
 	        key: 'sendFormData',
@@ -142,21 +217,6 @@
 	            request.open('POST', event.target.dataset.url + bustCache, true);
 	            request.setRequestHeader('X-Requested-With', 'formWriteRequest');
 	            request.send(data);
-	        }
-	    }, {
-	        key: 'getThankYouPage',
-	        value: function getThankYouPage() {
-	            var bustCache = '?' + new Date().getTime();
-	            var request = new XMLHttpRequest();
-	            request.onload = function () {
-	                if (request.readyState == 4 && request.status == 200) {
-	                    document.getElementsByClassName('container')[0].innerHTML = request.responseText;
-	                    window.history.pushState('', 'Thank You', '/thank-you');
-	                }
-	            };
-	            request.open('POST', event.target.dataset.url + bustCache, true);
-	            request.setRequestHeader('X-Requested-With', 'getThankYouPageRequest');
-	            request.send();
 	        }
 	    }]);
 

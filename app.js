@@ -28,8 +28,6 @@ class app {
                 if (req.method == 'POST') {
                     if (req.headers['x-requested-with'] === 'formWriteRequest') {
                         app.writeFormData(req, res);
-                    } else if (req.headers['x-requested-with'] === 'getThankYouPageRequest') {
-                        app.getThankYouPage(res);
                     } else {
                         console.log("[405] " + req.method + " to " + req.url);
                         res.writeHead(405, "Method not supported", { 'Content-Type': 'text/html' });
@@ -69,10 +67,10 @@ class app {
         });
     }
 
-    static getThankYouPage(res) {
-        const fs = require('fs');
-        res.writeHead(200,{'Content-Type': 'text/html'});
-        res.end(fs.readFileSync(__dirname + '/public/views/thank-you.html', 'utf-8'));
+    processAjaxData(response, urlPath){
+        document.getElementById("content").innerHTML = response.html;
+        document.title = response.pageTitle;
+        window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
     }
 }
 
