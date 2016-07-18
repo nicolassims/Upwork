@@ -27,7 +27,6 @@ class main {
         document.getElementById('previousPropertyLabelOfThirdDirector').style.display = 'none';
         document.getElementById('previousStreetLabelOfThirdDirector').style.display = 'none';
         document.getElementById('thankYou').style.display = 'none';
-
         let dtToday = new Date();
         let month = dtToday.getMonth() + 1;
         let day = dtToday.getDate();
@@ -43,7 +42,6 @@ class main {
         document.getElementById('dateOfBirth').value = '≤ ' + birthYear + '-' + month + '-' + day;
         document.getElementById('dateOfBirthOfSecondDirector').value = '≤ ' + birthYear + '-' + month + '-' + day;
         document.getElementById('dateOfBirthOfThirdDirector').value = '≤ ' + birthYear + '-' + month + '-' + day;
-
         let inputs = document.getElementsByClassName('form-control');
         for (let i = 0; i < inputs.length; i++) {
             inputs[i].addEventListener('blur', () => {

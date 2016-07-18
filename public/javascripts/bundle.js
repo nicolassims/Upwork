@@ -83,7 +83,6 @@
 	            document.getElementById('previousPropertyLabelOfThirdDirector').style.display = 'none';
 	            document.getElementById('previousStreetLabelOfThirdDirector').style.display = 'none';
 	            document.getElementById('thankYou').style.display = 'none';
-
 	            var dtToday = new Date();
 	            var month = dtToday.getMonth() + 1;
 	            var day = dtToday.getDate();
@@ -99,7 +98,6 @@
 	            document.getElementById('dateOfBirth').value = '≤ ' + birthYear + '-' + month + '-' + day;
 	            document.getElementById('dateOfBirthOfSecondDirector').value = '≤ ' + birthYear + '-' + month + '-' + day;
 	            document.getElementById('dateOfBirthOfThirdDirector').value = '≤ ' + birthYear + '-' + month + '-' + day;
-
 	            var inputs = document.getElementsByClassName('form-control');
 
 	            var _loop = function _loop(i) {
